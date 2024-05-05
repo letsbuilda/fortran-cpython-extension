@@ -14,4 +14,8 @@ build-backend = "mesonpy"
 requires = ["meson-python", "numpy"]
 
 [tool.cibuildwheel]
-skip = "*-win32 *-manylinux_i686"
+skip = [
+  "pp*",
+  "*-win32",
+  "*-manylinux_i686",
+]
