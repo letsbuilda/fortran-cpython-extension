@@ -1,17 +1,17 @@
 [project]
-name = 'our-first-project'
-version = '0.0.1'
-description = 'Our first Python project, using meson-python!'
-readme = 'README.md'
-requires-python = '>=3.8'
-license = {file = 'LICENSE'}
+name = "fortran-cpython-extension"
+version = "0.1.0"
+description = "Our first Fortran project, using meson-python!"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
 authors = [
-  {name = 'Bowsette Koopa', email = 'bowsette@example.com'},
+  {name = "Bradley Reynolds", email = "bradley.reynolds@darbia.dev"},
 ]
 
 [build-system]
-build-backend = 'mesonpy'
-requires = ['meson-python', "numpy"]
+build-backend = "mesonpy"
+requires = ["meson-python", "numpy"]
 
 [tool.cibuildwheel]
 skip = "*-win32 *-manylinux_i686"
